@@ -5,34 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <header>
-        <a href="#" id="titleSuiza">Suiza</a>
+        <a href="#" id="titleSuiza">Suiza <span>+</span></a>
         <nav>
-            <ul>
-                <li>
-                    <a href="#mejoresDestinos">Mejores destinos</a>
-                </li>
-                <li>
-                    <a href="#sugerencias">Sugerencias</a>
-                </li>
-                <li>
-                    <a href="#descubrir">Descubrir Suiza</a>
-                </li>
-                <li>
-                    <a href="#ofertas">Ofertas</a>
-                </li>                
-                <li>
-                    <a href="#experiencias">Experiencias</a>
-                </li>
-            </ul>
+            <a href="#mejoresDestinos">Mejores destinos</a>
+            <a href="#sugerencias">Sugerencias</a>
+            <a href="#descubrir">Descubrir Suiza</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#experiencias">Experiencias</a>
         </nav>
     </header>
+    <div id="imgHome">
+        <h1>Suiza</h1>
+    </div>
     <section id="home">
-        <div id="imgHome">
-            <img src="src/img/imgSuiza.jpg" alt="">
-        </div>
         <div id="linkViaje">
             <li>
                 <a href="https://www.skyscanner.es/vuelos-desde/ch/vuelos-baratos-de-suiza.html?&utm_source=google&utm_medium=cpc&utm_campaign=XY-Flights-Search-ES-DSA&utm_term=DYNAMIC+SEARCH+ADS&associateID=SEM_GGF_19370_00030&gclid=CjwKCAjwxOymBhAFEiwAnodBLHELcHHL2q4n_yWLxCsbWIH4Zbr5NCTmfGo3UEC0LYz1V-7KknoFZBoCvR0QAvD_BwE&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer">Reserva de Vuelos</a>
@@ -51,7 +40,8 @@
             </li>
         </div>
     </section>
-    <section id="mejoresDestinos">
+    <div class="espacio" id="mejoresDestinos"></div>
+    <section>
         <h2>Mejores destinos</h2>
         <article id="imgMejoresDestinos">
             <div class="imgDestino">
@@ -109,40 +99,45 @@
                 </a>
             </div>
         </article>
-    </section>
-    <section id="sugerencias">
+    </section>    
+    <div class="espacio" id="sugerencias"></div>
+    <section class="sugerencias">
         <h2>Sugerencias</h2>
         <article id="excurcionesVer">
             <h3>Excurciones</h3>
-            <img src="src/img/excursion1.jpg" alt="">
-            <img src="src/img/excursion2.jpg" alt="">
-            <img src="src/img/excursion3.jpg" alt="">
+            <div class="gridImage">
+                <img src="src/img/excursion1.jpg" alt="" id="s1">
+                <img src="src/img/excursion2.jpg" alt="" id="s2">
+                <img src="src/img/excursion3.jpg" alt="" id="s3">
+            </div>
         </article>
     </section>
-    <setion id="descubrir">
+    <div class="espacio" id="descubrir"></div>
+    <section>
         <h2>Descubrir</h2>
         <article id="contenidoDescubrir">
-            <div class="contenedor">
+            <div class="contenedor" id="descubrir1">
                 <a href="https://www.myswitzerland.com/es/descubrir-suiza/viajes-tematicos/tren-autobs-y-barco-grand-train-tour/grand-train-tour-of-switzerland/?_gl=1*1sjrdog*_up*MQ..*_ga*MzA2MTYxMDQ3LjE2OTIxMDIyMjE.*_ga_F6N1LVHY7B*MTY5MjEwMjIyMS4xLjAuMTY5MjEwMjIyMS4wLjAuMA.." target="_blank" rel="noopener noreferrer">
                     <img src="src/img/roger.jpg" alt="">
                     <h3>Descubrir Suiza en tren con Roger Federer</h3>
                 </a>
             </div>
-            <div class="contenedor">
+            <div class="contenedor" id="descubrir2">
                 <a href="https://www.myswitzerland.com/es/planificacion/sobre-suiza/sostenibilidad/viajes-sostenibles-con-el-transporte-pblico/?_gl=1*1qa6iff*_up*MQ..*_ga*MzA2MTYxMDQ3LjE2OTIxMDIyMjE.*_ga_F6N1LVHY7B*MTY5MjEwMjIyMS4xLjAuMTY5MjEwMjIyMS4wLjAuMA.." target="_blank" rel="noopener noreferrer">
                     <img src="src/img/viajeTransporte.jpg" alt="">
                     <h3>Viajes sostenibles con el transporte público</h3>
                 </a>
             </div>
-            <div class="contenedor">
+            <div class="contenedor" id="descubrir3">
                 <a href="https://www.myswitzerland.com/es/planificacion/sobre-suiza/sostenibilidad/?_gl=1*1qa6iff*_up*MQ..*_ga*MzA2MTYxMDQ3LjE2OTIxMDIyMjE.*_ga_F6N1LVHY7B*MTY5MjEwMjIyMS4xLjAuMTY5MjEwMjIyMS4wLjAuMA.." target="_blank" rel="noopener noreferrer">
                     <img src="src/img/sostenible.jpg" alt="">
                     <h3>Sostenibilidad</h3>
                 </a>
             </div>
         </article>
-    </setion>
-    <section id="ofertas">
+    </section>
+    <div class="espacio" id="ofertas"></div>
+    <section class="ofertasWeb">
         <h2>Ofertas</h2>
         <a href="http://https://www.es.kayak.com/vuelos/Estados-Unidos-US0/Suiza-CH0?gclid=CjwKCAjwxOymBhAFEiwAnodBLC0hktEdZyQxS_4St1wq1a7Wk1ucAGYlucqj9UKPATlhZo4eW_VPbBoCp4YQAvD_BwE" target="_blank" rel="noopener noreferrer">
             <h3>Kayak (Vuelos)</h3>
@@ -153,7 +148,8 @@
             <img src="src/img/logoHoteles.jpg" alt="">
         </a>
     </section>
-    <section id="experiencias">
+    <div class="espacio" id="experiencias"></div>
+    <section class="experienciasWeb">
         <h2>Experiencias</h2>
         <article id="imgExperiencia">
             <div class="actividad">
@@ -175,7 +171,10 @@
             <div class="actividad">
                 <img src="src/img/senderismoInvierno.jpg" alt="">
                 <h3>Senderismo de invierno</h3>
-            </div>            
+            </div>      
+            <div class="actividad">
+                <h3 id="iconomas">+</h3>
+            </div>        
         </article>
     </section>
     <footer>
